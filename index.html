@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cat Pic</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="module" src="./dist/index.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+      }
+      figure {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <figure>
+      <cat-pic></cat-pic>
+      <figcaption>
+        <pre><code>&lt;cat-pic&gt;&lt;/cat-pic&gt;</code></pre>
+        Default cat picture
+      </figcaption>
+    </figure>
+
+    <figure>
+      <cat-pic width="250px"></cat-pic>
+      <figcaption>
+        <pre><code>&lt;cat-pic width="250px"&gt;&lt;/cat-pic&gt;</code></pre>
+        Square picture of cat, width of 250px
+      </figcaption>
+    </figure>
+
+    <figure>
+      <cat-pic height="150px"></cat-pic>
+      <figcaption>
+          <pre><code>&lt;cat-pic height="150px"&gt;&lt;/cat-pic&gt;</code></pre>
+        Square picture of cat, height of 150px
+      </figcaption>
+    </figure>
+
+    <figure>
+      <cat-pic width="250px" height="100px"></cat-pic>
+      <figcaption>
+          <pre><code>&lt;cat-pic width="250px" height="100px"&gt;&lt;/cat-pic&gt;</code></pre>
+        Picture of cat, width of 250px, height of 100px
+      </figcaption>
+    </figure>
+
+  </body>
+</html>

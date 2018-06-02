@@ -1,0 +1,31 @@
+{
+  "name": "@averagemarcus/cat-pic",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Picutes of cats",
+  "main": "index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "serve": "ws",
+    "build": "rollup -c",
+    "release": "npm run build && np"
+  },
+  "author": "Marcus Noble",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AverageMarcus/cat-pic.git"
+  },
+  "dependencies": {
+    "@polymer/lit-element": "^0.5.1"
+  },
+  "devDependencies": {
+    "local-web-server": "^2.5.2",
+    "np": "^3.0.2",
+    "rollup": "^0.59.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  }
+}
